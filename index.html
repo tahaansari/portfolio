@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Web Programmer
+    </title>
+    <meta content="width=device-width" name="viewport">
+    <link href="assets/css/ta.css" rel="stylesheet">
+    <link href="assets/css/_style.css" rel="stylesheet">
+    </meta>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1>
+                    Logooo chnaged
+                </h1>
+        </div>
+        <ul>
+            <li>
+                <a href="#">
+                        Home
+                    </a>
+            </li>
+            <li>
+                <a href="#">
+                        Why me?
+                    </a>
+            </li>
+            <li>
+                <a href="#">
+                        Skills
+                    </a>
+            </li>
+            <li>
+                <a href="#">
+                        Work
+                    </a>
+            </li>
+            <!-- <li>
+                <a href="#">
+                        Testimonials
+                    </a>
+            </li> -->
+            <li>
+                <a href="#">
+                        Contact Me
+                    </a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <div>
+            </div>
+            <div>
+            </div>
+            <div>
+            </div>
+        </div>
+    </nav>
+    <div class="banner-container">
+        <img class="man" src="assets/img/man.png">
+        <div class="center-content">
+            <h1 class="name"></h1>
+            <p class="work">
+                I design and code beautifully simple things, and I love what I do.
+            </p>
+        </div>
+    </div>
+    <div class="ta-section">
+        <div class="ta-container">
+            <div class="why-me">
+                <img class="brain" src="assets/img/mind.svg">
+                <h2>SKILLS</h2>
+                <p>In my 6 years' experience I became expert in HTML, CSS, jQuery, Laravel and others.</p>
+            </div>
+            <div class="why-me">
+                <img src="assets/img/responsive.svg">
+                <h2>RESPONSIVE</h2>
+                <p>In my 6 years' experience I became expert in HTML, CSS, jQuery, Laravel and others.</p>
+            </div>
+            <div class="why-me">
+                <img src="assets/img/time.svg">
+                <h2>SPEED</h2>
+                <p>In my 6 years' experience I became expert in HTML, CSS, jQuery, Laravel and others.</p>
+            </div>
+        </div>
+    </div>
+    <div class="ta-section">
+        <div class="ta-container">
+            <div class="work">
+                <img src="assets/img/bhh.png">
+                <p>HTML/CSS (Bootsrap)</p>
+                <p>JAVASCRIPT (jQuery)</p>
+                <p>RESPONSIVE</p>
+                <a class="btn" href="#">
+                        View Website
+                    </a>
+            </div>
+            <div class="work">
+                <img src="assets/img/bhh.png">
+                <p>HTML/CSS (Bootsrap)</p>
+                <p>JAVASCRIPT (jQuery)</p>
+                <p>RESPONSIVE</p>
+                <a class="btn" href="#">
+                        View Website
+                    </a>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery-2.2.4.js" type="text/javascript">
+    </script>
+    <script src="assets/js/typed.js" type="text/javascript">
+    </script>
+    <script src="assets/js/ta.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+    jQuery(document).ready(function() {
+
+
+        $('.hamburger').click(function() {
+            $('nav').toggleClass('active');
+        })
+
+
+        // alert('device is ready');
+
+        var options = {
+            // Hi, I'm Taha Ansari
+            strings: ["Lorem Ipsum"],
+            typeSpeed: 100,
+            showCursor: false,
+            onComplete: function() {
+                // alert('done');
+                $('.work').animate({ 'opacity': 1 }, 1000);
+            }
+        }
+
+        var typed = new Typed(".name", options);
+
+    })
+    </script>
+</body>
+
+</html>

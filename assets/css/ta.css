@@ -1,0 +1,263 @@
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("fonts/Lato-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/Lato-Bold.woff") format("woff"), url("fonts/Lato-Bold.ttf") format("truetype"), url("fonts/Lato-Bold.svg#Lato-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Lato-Regular.woff") format("woff"), url("fonts/Lato-Regular.ttf") format("truetype"), url("fonts/Lato-Regular.svg#Lato-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Lato-Regular"; }
+
+* {
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%; }
+
+.ta-container {
+  margin: 0 auto;
+  padding: 0 15px;
+  border: 1px solid black; }
+
+.ta-section {
+  padding: 40px 0; }
+
+.slick-slider {
+  width: 100%;
+  overflow: hidden; }
+  .slick-slider .slick-slide {
+    width: 100%;
+    float: left; }
+
+nav {
+  background: #fff;
+  color: #000;
+  padding: 15px 5%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1; }
+  nav .logo {
+    display: inline-block; }
+    nav .logo h1 {
+      font-size: 36px; }
+  nav ul {
+    position: absolute;
+    right: 5%; }
+    nav ul li {
+      list-style: none;
+      padding: 0 10px;
+      display: inline-block;
+      margin: 0 10px;
+      cursor: pointer;
+      vertical-align: middle; }
+      nav ul li a {
+        font-size: 18px;
+        color: #202020;
+        font-family: "Lato-Bold";
+        text-decoration: none; }
+        @media (max-width: 992px) {
+          nav ul li a {
+            color: #ffffff; } }
+      @media (max-width: 992px) {
+        nav ul li {
+          width: 100%;
+          padding: 10px 5%;
+          margin: 0; } }
+      @media (max-width: 992px) {
+        nav ul li:first-child {
+          padding-top: 50px; } }
+    @media (max-width: 992px) {
+      nav ul {
+        transform: translateY(0) !important;
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        width: 80%;
+        height: 100vh;
+        background: #000; } }
+  nav.active ul {
+    opacity: 1;
+    transition: opacity .1s;
+    transform: translateX(0); }
+  nav.active .hamburger div:nth-child(1) {
+    top: 12.5px;
+    transform: rotate(135deg); }
+  nav.active .hamburger div:nth-child(2) {
+    opacity: 0; }
+  nav.active .hamburger div:nth-child(3) {
+    top: 12.5px;
+    transform: rotate(-135deg); }
+  nav .hamburger {
+    display: none;
+    width: 35px;
+    height: 30px;
+    position: relative; }
+    nav .hamburger div {
+      transition: 0.2s;
+      position: absolute;
+      width: 100%;
+      height: 5px;
+      background: #000; }
+      nav .hamburger div:nth-child(1) {
+        top: 0; }
+      nav .hamburger div:nth-child(2) {
+        top: 12.5px; }
+      nav .hamburger div:nth-child(3) {
+        top: 25px; }
+    @media (max-width: 992px) {
+      nav .hamburger {
+        display: inline-block;
+        float: right; } }
+
+/*for iphone 5s*/
+/*for mobile*/
+/*for tablet*/
+@media (min-width: 768px) {
+  .ta-container {
+    width: 750px; } }
+/*for large tablet*/
+@media (min-width: 992px) {
+  .ta-container {
+    width: 970px; } }
+/*for large resolution*/
+@media (min-width: 1200px) {
+  .ta-container {
+    width: 1170px; } }
+
+/*# sourceMappingURL=ta.css.map */
