@@ -3,7 +3,7 @@
 
 <head>
     <title>
-        the coder
+        mransari
     </title>
     <meta content="width=device-width" name="viewport">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
@@ -18,41 +18,81 @@
                 <div class="close">
                     close
                 </div>
-                <ul class="navigation__list">
-                    <li class="navigation__item">
-                        <a href="#">Home</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#">Why me?</a> 
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#">Skills</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#">Work</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#">Testimonials</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#">Contact Me</a>
-                    </li>
-                </ul>
+                <div class="navigation__wrap">
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <a href="#whyme">Why me?</a> 
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#skills">Skills</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#work">Work</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#contactme">Contact Me</a>
+                        </li>
+                    </ul>
+                    <a class="navigation__resume" target="_blank" href="assets/resume/webDeveloper.pdf">
+                        Resume
+                    </a>
+                </div>
             </div>
         </nav>
     </section>
-    <section class="nomar-top nopad">
+    <section id="whyme" class="nomar nopad">
         <div class="banner">
             <img class="banner__man" src="assets/img/man.png">
             <div class="banner__content">
-                <h1 class="banner__heading"></h1>
+                <h2 class="banner__heading"></h2>
                 <p class="banner__description">
-                    I design and code beautifully simple things, <br> and I love what I do.
-                </p>
+                    <!-- I spend my days with my hands in many different areas of web development from back end programming (PHP, Codeigniter) to front end engineering (HTML, CSS, and jQuery/Javascript)</p> -->
             </div>
         </div>
     </section>
-    <section>
+    <section class="nomar nopad" id="skills">
+            <div id="skillCanvasContainer">
+                <canvas id="skillCanvas">
+                 <ul>
+                   <li><a href="">ReactJs</a></li>
+                   <li><a href="">Angular 5</a></li>
+                   <li><a href="">Es6</a></li>
+                   <li><a href="">Ajax</a></li>
+                   <li><a href="">Node Js</a></li>
+                   <li><a href="">SQL</a></li>
+                   <li><a href="">Mysql</a></li>
+                   <li><a href="">HTML5</a></li>
+                   <li><a href="">Css3</a></li>
+                   <li><a href="">Sass</a></li>
+                   <li><a href="">Scss</a></li>
+                   <li><a href="">ReactJs</a></li>
+                   <li><a href="">Angular 5</a></li>
+                   <li><a href="">Es6</a></li>
+                   <li><a href="">Ajax</a></li>
+                   <li><a href="">Node Js</a></li>
+                   <li><a href="">SQL</a></li>
+                   <li><a href="">Mysql</a></li>
+                   <li><a href="">HTML5</a></li>
+                   <li><a href="">Css3</a></li>
+                   <li><a href="">Sass</a></li>
+                   <li><a href="">Scss</a></li>
+                   <li><a href="">Less</a></li>
+                   <li><a href="">Bootstrap 4</a></li>
+                   <li><a href="">JQuery</a></li>
+                   <li><a href="">Json</a></li>
+                   <li><a href="">PHP</a></li>
+                   <li><a href="">Python</a></li>
+                   <li><a href="">ASP</a></li>
+                   <li><a href="">Raspberry Pi</a></li>
+                   <li><a href="">XSLT</a></li>
+                   <li><a href="">XQuery</a></li>
+                   <li><a href="">Xml</a></li>
+                   <li><a href="">HTTP</a></li>
+                 </ul>
+                </canvas>
+               </div>
+        </section>
+    <section class="nomar-top" id="work">
         <div class="container">
             <div class="works">
                 <ul class="works__list">
@@ -120,36 +160,49 @@
             </div>
         </div>
     </section>
-    <!-- <section>
+    <section id="contactme">
         <div class="contactWrap">
             <div class="contactWrap__left">
-                <h2>What can I do for you today ?</h2>
-                <span class="contactme__call">8976321674</span>    
+                <h2 class="contactme__heading">What can I do for you today ?</h2>
+                <span class="contactme__call">+91 8976321674</span>    
                 <span class="contactme__email">taha.m.ansari@gmail.com</span>
             </div>
             <div class="contactWrap__right">
                 <img  class="contactme__img" src="assets/img/contactman.png" alt="">
             </div>
         </div>
-    </section> -->
+    </section>
     <script src="assets/js/jquery-2.2.4.js" type="text/javascript">
     </script>
     <script src="assets/js/typed.js" type="text/javascript">
+    </script>
+    <script src="assets/js/skills.js" type="text/javascript">
     </script>
     <script src="assets/js/ta.js" type="text/javascript">
     </script>
     <script type="text/javascript">
         jQuery(document).ready(function () {
             // alert('device is ready');
-            var options = {
-                strings: ["In my 6 years' experience."],
+
+            // var options = {
+            //     strings: ["In my 6 years' experience,"],
+            //     typeSpeed: 100,
+            //     showCursor: false,
+            //     onComplete: function () {
+            //         // $('.banner__description').animate({ 'opacity': 1 }, 1000);
+            //     }
+            // }
+            // var typed = new Typed(".banner__heading", options);
+
+            var options2 = {
+                strings: ["I spend my days with my hands in many different areas of web development from back end programming (PHP, Codeigniter) to front end engineering (HTML, CSS, and jQuery/Javascript)"],
                 typeSpeed: 100,
                 showCursor: false,
                 onComplete: function () {
-                    $('.banner__description').animate({ 'opacity': 1 }, 1000);
+                    // $('.banner__description').animate({ 'opacity': 1 }, 1000);
                 }
             }
-            var typed = new Typed(".banner__heading", options);
+            var typed2 = new Typed(".banner__description", options2);
         })
     </script>
 </body>
